@@ -4,7 +4,7 @@
 #book.each_value{ |b| binding.pry}
 # puts book.keys
 # puts book.values
-
+ 
  title = book.select{|b,c| b =="intro to ruby programming beginner"}
   puts book.include?(:prices)
  puts book.index("codemy.com")
