@@ -44,3 +44,18 @@ puts book.index("codemy.com")
  10.times {|i| puts "i is: #{i}"}
   
   binding.pry
+
+
+
+  #What are the | |?
+  #Those are called "pipes". When invoking an enumerable method like 
+  #map, the variable name inside the pipes acts as an argument that is being passed into the block. The method will pass, or yield, each element of the collection on which it is called to the block. Each element, as it gets passed into the block, will be equal to the variable name inside the pipes. Think of it like this:
+
+  ["this", "is", "Ruby"].map.with_index do |str, index|
+    if index.even?
+      str.upcase
+    else
+      str
+    end
+  end
+  # => ["THIS", "is", "RUBY"]
