@@ -59,3 +59,23 @@ puts book.index("codemy.com")
     end
   end
   # => ["THIS", "is", "RUBY"]
+
+  #sort the hashes and array
+  users = [
+  { name: "Liza", phone: "555-555-5556" },
+  { name: "Duane", phone: "555-555-5555"},
+  { name: "Cara", phone: "555-555-5556"},
+]
+
+sorted_users = users.sort do |user1, user2|
+  if user1[:name] == user2[:name]
+    0
+  elsif user1[:name] < user2[:name]
+    -1
+  elsif user1[:name] > user2[:name]
+    1
+  end
+end
+
+sorted_users
+# => [{:name=>"Cara", :phone=>"555-555-5556"}, {:name=>"Duane", :phone=>"555-555-5555"}, {:name=>...
