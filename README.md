@@ -5,9 +5,9 @@
 # puts book.keys
 # puts book.values
 
-#  title = book.select{|b,c| b =="intro to ruby programming beginner"}
-#  puts book.include?(:prices)
-# puts book.index("codemy.com")
+ title = book.select{|b,c| b =="intro to ruby programming beginner"}
+  puts book.include?(:prices)
+ puts book.index("codemy.com")
 binding.pry
 
-#converting hash to an array we use e.g <b>book.to_a</b>
+converting hash to an array we use e.g <b>book.to_a</b>
